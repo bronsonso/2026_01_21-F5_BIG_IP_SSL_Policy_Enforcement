@@ -7,12 +7,14 @@
 
 1. create the following testing file in windows 
 
-``` file name: test_irule_creation.irule
+```
+ file name: test_irule_creation.irule
  
  when HTTP_REQUEST { <br>
     # Log basic request information <br>
     log local0. "TEST IRULE: Client [IP::client_addr]:[TCP::client_port] -> [HTTP::host][HTTP::uri]" <br>
- } ```
+ } 
+ ```
 
 1. check if iRule existed
 > tmsh list ltm rule | grep -E "test.irule"
